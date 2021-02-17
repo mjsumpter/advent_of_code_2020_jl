@@ -7,6 +7,6 @@ function expense_calc(expense_file::String, num_of_nums::Int, sum_goal::Int=2020
     return prod(chosen_expense)
 end
 
-expense_file = "./input1.txt"
+expense_file = "input/input1.txt"
 println("Answer 1: $(expense_calc(expense_file, 2))")
 println("Answer 2: $(expense_calc(expense_file, 3))")

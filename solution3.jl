@@ -1,4 +1,4 @@
-lines = readlines("./input3.txt")
+lines = readlines("input/input3.txt")
 
 function count_trees(line)
     

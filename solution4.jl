@@ -1,4 +1,4 @@
-text = open(f ->read(f, String), "./input4.txt")
+text = open(f ->read(f, String), "input/input4.txt")
 
 passports = split(text, "\n\n")
 

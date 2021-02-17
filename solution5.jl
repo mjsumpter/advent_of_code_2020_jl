@@ -27,7 +27,7 @@ function find_missing_id(ids)
     end
 end
 
-seats = readlines("./input5.txt")
+seats = readlines("input/input5.txt")
 seat_ids = map(map_seat, seats)
 
 println("Answer 1: $(maximum(seat_ids))")

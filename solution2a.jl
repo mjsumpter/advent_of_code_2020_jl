@@ -1,5 +1,5 @@
 
-infile = "input2.txt"
+infile = "input/input2.txt"
 pwds = readlines(infile)
 
 final = filter(pwds) do line
