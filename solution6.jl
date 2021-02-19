@@ -1,3 +1,5 @@
+using Pipe: @pipe
+
 function alpha_int(alph::Char)
     return (Int(alph) % Int('a')) + 1
 end
@@ -55,5 +57,13 @@ function main2()
 
 end
 
+function main3()
+    @pipe (read("input/input6.txt", String) |> strip |> split(_, "\n\n") |> 
+            map(x -> split(x, '\n'), _) |> [map(x-> map(c -> alpha_int(c), collect(x)), group) for group in _ ] |>
+            [ length(intersect(group...)) for group in _ ] |> sum |> println("Answer2_short: " * string(_))            
+        )
+end
+
 main()
 main2()
+main3()
